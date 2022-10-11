@@ -39,9 +39,19 @@ namespace FileToSplatoon
 
                 for (int bit = 0; bit < bitArray.Length; bit++)
                 {
-                    if (bitArray[bit] < 0x7F)
+                    if (InvertCheckBox.IsChecked ?? false)
                     {
-                        fileBytes[bit / 8] |= (byte)(1 << (bit % 8));
+                        if (bitArray[bit] > 0x7F)
+                        {
+                            fileBytes[bit / 8] |= (byte)(1 << (bit % 8));
+                        }
+                    }
+                    else
+                    {
+                        if (bitArray[bit] < 0x7F)
+                        {
+                            fileBytes[bit / 8] |= (byte)(1 << (bit % 8));
+                        }
                     }
                 }
 
