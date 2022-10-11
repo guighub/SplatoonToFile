@@ -1,4 +1,4 @@
-# FileToSplatoon
+# SplatoonToFile
 A program to convert FileToSplatoon images back to files
 ## How To Use
 Run the program, you should see a small window with some UI.\
