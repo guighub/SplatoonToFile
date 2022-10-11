@@ -1,0 +1,14 @@
+﻿<Window x:Class="FileToSplatoon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileToSplatoon"
+        mc:Ignorable="d"
+        Title="SplatoonToFile" Height="120" Width="320" Background="#FF323232" Icon="/app_icon.png" ResizeMode="NoResize">
+    <Grid>
+        <Button Content="Open" Margin="10,0,0,0" Height="30" Width="66" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FFEEEEEE" Background="#FF242424" Name="OpenButton" Click="OpenButton_Click"/>
+        <Label x:Name="LogText" Content="Initialized" Margin="150,0,0,0" Foreground="#FFEEEEEE" FontWeight="Normal" FontFamily="Splatoon2" VerticalContentAlignment="Center" RenderTransformOrigin="-0.03,0.794" VerticalAlignment="Center" Background="#FF242424" BorderBrush="Black" BorderThickness="2,2,2,2" Height="50" Width="130" HorizontalAlignment="Left" AutomationProperties.Name="ConsoleTextBox"/>
+        <CheckBox x:Name="InvertCheckBox" Content="Invert" Margin="81,0,174,0" Width="65" Foreground="#FFEEEEEE" FontFamily="Splatoon2" Checked="CheckBox_Checked" FontWeight="Normal" FontStyle="Normal" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" HorizontalAlignment="Left" AutomationProperties.Name="InvertCheckBox"/>
+    </Grid>
+</Window>
