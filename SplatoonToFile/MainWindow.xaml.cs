@@ -47,6 +47,8 @@ namespace FileToSplatoon
 
                 FileStream outFile = new FileStream(openFile.FileName + ".dat", FileMode.Create);
                 outFile.Write(fileBytes);
+                LogText.Content = "Complete!";
+                LogText.Foreground = Brushes.Green;
             }
         }
 
